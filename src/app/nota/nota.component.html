@@ -1,0 +1,34 @@
+<body>
+    <div class="container">
+        <div id = "divForm" class="box">
+            <h1 id = "titulo">Cadastro de Notas</h1>
+            <form action="">
+                <input id="nomeAluno" clas = "campoNome" type="text" [(ngModel)] = "aluno.nome" placeholder="Nome" name="nome"><br>
+                <input id = "nota01" class = "campoNota" type="number" [(ngModel)] = "aluno.nota01" placeholder="Nota 01"name="nota01">
+                <input id = "nota02" class = "campoNota" type="number" [(ngModel)] = "aluno.nota02" placeholder="Nota 02" name="nota02">
+                <input id = "butaoCadastar" type="button" value="Cadastrar" (click) = "cadastrar()" *ngIf = "id < 0">
+                <input id = "butaoAtualizar" type="button" value="Atualizar" (click) = "atualizar()" *ngIf = "id >= 0">
+            </form>
+        </div>
+        <div id = "divTabelaNotas" class="box">
+            <table>
+                <tr>
+                    <td>Nome</td>
+                    <td>Nota 01</td>
+                    <td>Nota 02</td>
+                    <td>Media</td>
+                    <td>Situação</td>
+                </tr>
+                <tr *ngFor = "let aluno of vetorAlunos let id = index">
+                    <td>{{aluno.getNome()}}</td>
+                    <td>{{aluno.getNota01()}}</td>
+                    <td>{{aluno.getNota02()}}</td>
+                    <td>{{aluno.getMedia()}}</td>
+                    <td>{{aluno.getSituacao()}}</td>
+                    <td><button id = "excluir" (click) = "excluir(id)">X</button></td>
+                    <td><button id = "editar" (click) = "editar(id)">o</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>   
+</body>

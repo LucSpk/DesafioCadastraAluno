@@ -1,0 +1,132 @@
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top right, #43396b, #a089df);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    }
+
+.box {
+    background: #fafafa;
+    border: 1px solid;
+    border-color: rgb(204, 204, 204);
+    border-radius:  5px;
+    padding: 5px;
+    
+}
+
+.campoNota {
+    position: absolute;
+    width: 75px;
+}
+
+#divForm {
+    width: 300px;
+    height: 150px;
+}
+
+#divTabelaNotas {
+    position: relative;
+    top: 15px;
+    width: auto;
+    height: auto;
+}
+
+#nomeAluno {
+    position: relative;
+    top: -25px;
+    right: 0px;
+    bottom: 0px;
+    left: 45px;
+    width: 200px;
+}
+
+#nota01 {
+    position: relative;
+    top: -15px;
+    right: 0px;
+    bottom: 0px;
+    left: 55px;
+}
+
+#nota02 {
+    position: relative;
+    top: -15px;
+    right: 0px;
+    bottom: 0px;
+    left: 60px;
+}
+
+#butaoCadastar {
+    position: relative;
+    top: -5px;
+    right: 0px;
+    bottom: 0px;
+    left: 75px;
+}
+
+#butaoAtualizar {
+    position: relative;
+    top: -5px;
+    right: 0px;
+    bottom: 0px;
+    left: 75px;
+}
+
+#titulo {
+    position: relative;
+    top: -15px;
+    left: 50px;
+    font-size: 25px;
+}
+
+#excluir {
+    background-color: #f0f0f0;
+    border: solid 1px #e4e4e4;
+    border-radius: 5px;
+    font: bold;
+    color: rgb(180, 0, 0);
+}
+
+#editar {
+    background-color: #f0f0f0;
+    border: solid 1px #e4e4e4;
+    border-radius: 5px;
+    font: bold;
+    color: rgb(255, 238, 0);
+}
+
+input[type="text"],
+input[type="number"] {
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+input[type="button"] {
+    background-image: linear-gradient(to top right, #009732, #00ff22);;
+    border: solid 1px rgb(19, 160, 0);
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    width: 150px;
+}
+
+table {
+    font-size: 15px;
+    width: 400px;
+    margin: 1px auto;
+    border: solid 1px rgb(228, 228, 228);
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+body {
+    margin: 0px;
+}
