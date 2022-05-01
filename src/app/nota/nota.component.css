@@ -80,8 +80,10 @@
 #titulo {
     position: relative;
     top: -15px;
-    left: 50px;
+    left: 40px;
     font-size: 25px;
+    font-family: sans-serif;
+    color: #343434;
 }
 
 #excluir {
@@ -97,7 +99,7 @@
     border: solid 1px #e4e4e4;
     border-radius: 5px;
     font: bold;
-    color: rgb(255, 238, 0);
+    color: rgb(255, 196, 0);
 }
 
 input[type="text"],
@@ -119,6 +121,8 @@ input[type="button"] {
 
 table {
     font-size: 15px;
+    font-family: sans-serif;
+    color: #343434;
     width: 400px;
     margin: 1px auto;
     border: solid 1px rgb(228, 228, 228);
